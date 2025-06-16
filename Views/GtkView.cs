@@ -52,7 +52,6 @@ namespace Avalonia.FileDroper.Views
 
             _cursorHideTimer = new DispatcherTimer
             {
-                //避免设置频率太快了导致 视频设置异常
                 Interval = TimeSpan.FromSeconds(1)
             };
             _cursorHideTimer.Tick += CursorHideTimer_Tick;
